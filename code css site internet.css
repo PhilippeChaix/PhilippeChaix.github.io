@@ -176,7 +176,7 @@ footer {
     text-align: justify;
     padding: 10px;
     margin: 0 5px;
-    background: linear-gradient(180deg, #663d27, #333333);
+    background: linear-gradient(180deg, #663d27, #1d2227);
     border-radius: 30px;
     width: 53%;
     height: 300px;
@@ -198,7 +198,7 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background: linear-gradient(180deg,#333333, #663d27);;
+    background: linear-gradient(180deg,#1d2227, #663d27);;
     padding-bottom: 5px;
     padding-top: 5px;
     animation-name: slide;
