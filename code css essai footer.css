@@ -1,0 +1,208 @@
+body {
+	background-color: #1d2227;
+    margin: 0;
+	padding: 0;
+    flex-direction: column;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  transition: all 1.5s;
+}
+
+a:link {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: white;
+}
+
+a:visited {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: white;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  transition: all 1.5s;
+}
+
+a:active {
+    text-decoration: none;
+}   
+    
+th { width: 20000px;}
+ul { list-style-type: square; }
+
+.entete-de-page {
+    width: 100%;
+    display: grid;
+    border-bottom: 5px double beige;
+    background-image: url("https://i.redd.it/6nczmy1o6v041.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    position: fixed;
+    
+}
+
+.titre {
+    
+	max-height: 110px;
+    max-width: 100%;
+    width: 100%;
+    font-size: 35px;
+	text-align: center;
+    align-content: center;
+    color: beige;
+    vertical-align: top;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-shadow: 0.2em 0.5em 0.2em black,
+      -0.3em 0.1em 0.2em black,
+      0.4em -0.3em 0.2em black;
+    transition: all 1.5s;
+}
+.titre:hover {
+    text-shadow: 0.2em 0.5em 0.2em white,
+      -0.3em 0.1em 0.5em beige,
+      0.4em -0.3em 0.2em white,
+      2em 0.2em 0.8em red;
+    color: black;
+    transition: all 1.5s;
+    transform : scale(1.1);   
+}
+
+
+.bloc-menu {
+    display: flex;
+    margin: 10px;
+	height: auto;
+    max-height: 100px;
+	color: beige;
+    text-shadow: black 0.4em 0.4em 0em,
+        3px 0 black, 0 -3px black;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 18.5px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0.2em 0.5em 0.3em black,
+      -0.1em 0.1em 0.2em red,
+      0.4em -0.3em 0.3em black;
+    border-radius: 10px;
+    background-color: #1fe0;
+    box-shadow: inset 2px 2px 3px beige, inset -2px -2px 3px rgba(0, 0, 0, 0.9);
+    transition: all 1.5s;
+}
+
+.styled:hover {
+    background-color: beige;
+    color : black;
+    transition: all 1.5s;
+    transform : scale(1.1);
+    cursor: pointer;
+}
+.styled:active {
+    color : blue;
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.contenu {
+    padding-top: 178px;
+    margin-top:3px;
+    margin-bottom: 3px;
+    flex: 1 0 auto;
+}
+.image {
+    display: flex;
+	padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+	background-color: beige;
+    border: 5px solid beige;
+    color : grey;
+    justify-content: center;
+    align-items: center;
+}
+.texte {
+	padding: 10px;
+	background-color: beige;
+    text-align: justify;
+    color: black;
+}
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    background: chocolate;
+    color: white;
+}
+
+.contenu-footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
+    
+}
+
+.propos,
+.infos,
+.contact {
+    font-size: 16px;
+    padding-bottom: 20px;
+    text-align: justify;
+    padding: 10px;
+    margin: 0 5px;
+    background: saddlebrown;
+    border-radius: 30px;
+    width: 53%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.liste-prop {
+   list-style-type: none;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+.propos {
+    top: 80px;
+    height: 300px;
+}
+.logos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #FFF;
+}
+.img {
+    width: 33%;
+    text-align: center;
+}
+
