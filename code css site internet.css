@@ -131,7 +131,7 @@ ul { list-style-type: square; }
 
 .contenu {
     display: flex;
-    padding-top: 194px;
+    padding-top: 170px;
     margin-top:3px;
     flex-direction: column;
 }
@@ -156,8 +156,20 @@ ul { list-style-type: square; }
     text-align: justify;
     color: black;
 }
+
+.soustitre{
+	background-color: #1fe0;
+    text-align: justify;
+    color: #1d2227;
+    border-radius: 30px;
+    font-size: 30px;
+    word-spacing: 5px;
+    text-align: center;
+}
+
 .partieun,
-.partiedeux{
+.partiedeux,
+.partietrois{
 	padding: 5px 30px 30px;
 	background-color: #DCDCC6;
     text-align: justify;
@@ -168,11 +180,18 @@ ul { list-style-type: square; }
     line-height: 28px;
     word-spacing: 5px;
 }
-.listemoyen{
-    line-height: 30px;
+.listemoyen,
+.plandusite{
+    line-height: 40px;
 }
-
-
+.partieun a,
+.partiedeux a,
+.partietrois a{
+    color: black;
+}
+.plandusite hover{
+    color: black;
+}
 footer {
     flex-shrink: 0;
     width: 100%;
@@ -231,11 +250,4 @@ footer {
 .img {
     width: 33%;
     text-align: center;
-}
-
-@keyframes slide {
-    0% {transform: translateX(-1000)}
-    33% {transform: translateX(-10000)}
-    66% {transform: translateX(-30000)}
-    100% {transform: translateX(0)}
 }
