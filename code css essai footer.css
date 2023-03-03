@@ -2,6 +2,7 @@ body {
 	background-color: #1d2227;
     margin: 0;
 	padding: 0;
+    display: flex;
     flex-direction: column;
 }
 
@@ -58,7 +59,6 @@ ul { list-style-type: square; }
 }
 
 .titre {
-    
 	max-height: 110px;
     max-width: 100%;
     width: 100%;
@@ -130,13 +130,14 @@ ul { list-style-type: square; }
 }
 
 .contenu {
-    padding-top: 178px;
+    display: flex;
+    padding-top: 170px;
     margin-top:3px;
-    margin-bottom: 3px;
-    flex: 1 0 auto;
+    flex-direction: column;
 }
 .image {
     display: flex;
+    flex-direction: row;
 	padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
@@ -148,37 +149,74 @@ ul { list-style-type: square; }
     align-items: center;
 }
 .texte {
+    display: flex;
+    flex-direction: column;
 	padding: 10px;
 	background-color: beige;
     text-align: justify;
     color: black;
 }
 
+.soustitre{
+	background-color: #1fe0;
+    text-align: justify;
+    color: #1d2227;
+    border-radius: 30px;
+    font-size: 30px;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+.partieun,
+.partiedeux,
+.partietrois{
+	padding: 5px 30px 30px;
+	background-color: #DCDCC6;
+    text-align: justify;
+    color: black;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 20px;
+    line-height: 28px;
+    word-spacing: 5px;
+}
+.listemoyen,
+.plandusite{
+    line-height: 40px;
+}
+.partieun a,
+.partiedeux a,
+.partietrois a{
+    color: black;
+}
+.plandusite hover{
+    color: black;
+}
 footer {
     flex-shrink: 0;
     width: 100%;
-    background: chocolate;
     color: white;
 }
 
 .contenu-footer {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     font-size: 20px;
-    
+    background: #1d2227; 
 }
 
 .propos,
 .infos,
 .contact {
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
     padding-bottom: 20px;
     text-align: justify;
     padding: 10px;
     margin: 0 5px;
-    background: saddlebrown;
+    background: linear-gradient(180deg, #663d27, #1d2227);
     border-radius: 30px;
     width: 53%;
     height: 300px;
@@ -186,10 +224,11 @@ footer {
 }
 
 .liste-prop {
-   list-style-type: none;
+    list-style-type: none;
     align-items: center;
     padding-top: 0;
     margin-top: 0;
+    line-height: 30px;
 }
 .propos {
     top: 80px;
@@ -199,10 +238,16 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background: #FFF;
+    background: linear-gradient(180deg,#1d2227, #663d27);;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 30px;
+    margin: 10px;
 }
 .img {
     width: 33%;
     text-align: center;
 }
-
