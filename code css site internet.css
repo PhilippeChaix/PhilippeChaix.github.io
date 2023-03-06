@@ -200,10 +200,10 @@ ul { list-style-type: square; }
 }
 footer {
     flex-shrink: 0;
-    width: 100%;
     color: white;
     align-content: center;
     background: linear-gradient(180deg, #F5F5DC 0%, #1d2227 70%);
+    padding-right: 40px; padding-left: 40px;
 }
 
 .contenu-footer {
