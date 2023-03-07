@@ -255,9 +255,6 @@ footer {
     margin-bottom: 10px;
 }
 
-
-
-
 img {
 }
 
@@ -275,19 +272,22 @@ img {
     overflow: hidden;
     padding-bottom: 50px;
     border-radius: 30px;
+    /*border: 1px solid black;*/
 }
 .galerie1aeronefs,
-.galerie2aeronefs{
+.galerie2aeronefs,
+.galerie1missiles,
+.galerie2missiles{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     height: 360px;width:640px;
 }
+
 .galerie1aeronefs {
     animation: aeronefsslider1 18s infinite;
 }
-
 @keyframes aeronefsslider1 {
     0% {transform: translateX(0px)}
     10% {transform: translateX(0px)}
@@ -313,6 +313,44 @@ img {
 }
 @keyframes aeronefsslider2 {
     0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1missiles {
+    animation: missilesslider1 18s infinite;
+}
+@keyframes missilesslider1 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2missiles {
+    animation: missilesslider2 9s infinite;
+}
+@keyframes missilesslider2 {
+0% {transform: translateX(0px)}
     20% {transform: translateX(0px)}
     25% {transform: translateX(-640px)}
     45% {transform: translateX(-640px)}
