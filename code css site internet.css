@@ -279,7 +279,11 @@ img {
 .galerie1missiles,
 .galerie2missiles,
 .galerie1drones,
-.galerie2drones{
+.galerie2drones,
+.galerie3drones,
+.galerie1chars,
+.galerie2chars,
+.galerie3chars{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -364,7 +368,7 @@ img {
 }
 
 .galerie1drones {
-    animation: dronesslider1 18s infinite;
+    animation: dronesslider1 9s infinite;
 }
 @keyframes dronesslider1 {
     0% {transform: translateX(0px)}
@@ -398,5 +402,73 @@ img {
     85% {transform: translateX(-3840px)}
     87.5% {transform: translateX(-4480px)}
     97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie3drones {
+    animation: dronesslider3 9s infinite;
+}
+@keyframes dronesslider3 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1chars {
+    animation: charsslider1 9s infinite;
+}
+@keyframes charsslider1 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2chars {
+    animation: charsslider2 18s infinite;
+}
+@keyframes charsslider2 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie3chars {
+    animation: charsslider3 9s infinite;
+}
+@keyframes charsslider3 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
     100% {transform: translateX(0px)}
 }
