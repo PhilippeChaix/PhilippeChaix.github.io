@@ -4,6 +4,7 @@ body {
 	padding: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 a {
@@ -151,7 +152,8 @@ ul { list-style-type: square; }
 .texte {
     display: flex;
     flex-direction: column;
-	padding: 10px;
+	padding: 20px;
+    padding-left: 40px; padding-right: 40px;
 	background-color: beige;
     text-align: justify;
     color: black;
@@ -180,9 +182,13 @@ ul { list-style-type: square; }
     line-height: 28px;
     word-spacing: 5px;
 }
+.partiedeux,
+.partietrois{
+    margin-top: 40px;
+}
 .listemoyen,
 .plandusite{
-    line-height: 40px;
+    line-height: 28px;
 }
 .partieun a,
 .partiedeux a,
@@ -194,8 +200,10 @@ ul { list-style-type: square; }
 }
 footer {
     flex-shrink: 0;
-    width: 100%;
     color: white;
+    align-content: center;
+    background: linear-gradient(180deg, #F5F5DC 0%, #1d2227 70%);
+    padding-right: 40px; padding-left: 40px;
 }
 
 .contenu-footer {
@@ -203,7 +211,8 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     font-size: 20px;
-    background: #1d2227; 
+    width: 100%;
+    background: #1fe0
 }
 
 .propos,
@@ -215,14 +224,17 @@ footer {
     padding-bottom: 20px;
     text-align: justify;
     padding: 10px;
-    margin: 0 5px;
+    margin: 0 10px;
     background: linear-gradient(180deg, #663d27, #1d2227);
     border-radius: 30px;
     width: 53%;
     height: 300px;
     margin-bottom: 10px;
 }
-
+.propos {
+    top: 80px;
+    height: 300px;
+}
 .liste-prop {
     list-style-type: none;
     align-items: center;
@@ -230,24 +242,15 @@ footer {
     margin-top: 0;
     line-height: 30px;
 }
-.propos {
-    top: 80px;
-    height: 300px;
-}
+
 .logos {
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    background: linear-gradient(180deg,#1d2227, #663d27);;
+    background: linear-gradient(180deg,#1d2227 20%, #663d27 98%);
     padding-bottom: 5px;
     padding-top: 5px;
-    animation-name: slide;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
     border-radius: 30px;
     margin: 10px;
-}
-.img {
-    width: 33%;
-    text-align: center;
+    padding-left: 10px; padding-right: 10px;
+    margin-bottom: 10px;
 }

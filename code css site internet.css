@@ -55,8 +55,7 @@ ul { list-style-type: square; }
     background-position: center;
     background-size: cover;
     align-items: center;
-    position: fixed;
-    
+    position: fixed; 
 }
 
 .titre {
@@ -84,7 +83,7 @@ ul { list-style-type: square; }
       2em 0.2em 0.8em red;
     color: black;
     transition: all 1.5s;
-    transform : scale(1.1);   
+    transform : scale(1.2);   
 }
 
 
@@ -253,4 +252,55 @@ footer {
     margin: 10px;
     padding-left: 10px; padding-right: 10px;
     margin-bottom: 10px;
+}
+
+
+
+
+img {
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 40px;
+    background: #1fe0;
+    color: white;
+    height: auto;
+    color: black;
+    font-size: 20px;
+    height: 360px; width: 640px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.galerie {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 360px;width:640px;
+}
+.galerie {
+    animation: azeraz 18s infinite;
+}
+
+@keyframes azeraz {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
 }
