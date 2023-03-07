@@ -246,7 +246,7 @@ footer {
 .logos {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(180deg,#1d2227 20%, #663d27 98%);
+    background: linear-gradient(180deg,#1d2227, #663d27);
     padding-bottom: 5px;
     padding-top: 5px;
     border-radius: 30px;
