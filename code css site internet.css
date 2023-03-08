@@ -255,7 +255,9 @@ footer {
     margin-bottom: 10px;
 }
 
-img {
+::selection{
+    background-color: #663d27;
+    color: mintcream;
 }
 
 .photos {
@@ -272,7 +274,7 @@ img {
     overflow: hidden;
     padding-bottom: 50px;
     border-radius: 30px;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
 .galerie1aeronefs,
 .galerie2aeronefs,
@@ -283,7 +285,13 @@ img {
 .galerie3drones,
 .galerie1chars,
 .galerie2chars,
-.galerie3chars{
+.galerie3chars,
+.galerie1armesafeu,
+.galerie2armesafeu,
+.galerie3armesafeu,
+.galerie1canons,
+.galerie2canons,
+.galerie3canons{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -462,6 +470,112 @@ img {
     animation: charsslider3 9s infinite;
 }
 @keyframes charsslider3 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1armesafeu {
+    animation: armesafeuslider1 9s infinite;
+}
+@keyframes armesafeuslider1 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2armesafeu {
+    animation: armesafeuslider2 18s infinite;
+}
+@keyframes armesafeuslider2 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie3armesafeu {
+    animation: armesafeuslider3 9s infinite;
+}
+@keyframes armesafeuslider3 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1canons {
+    animation: canonsslider1 9s infinite;
+}
+@keyframes canonsslider1 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2canons {
+    animation: canonsslider2 18s infinite;
+}
+@keyframes canonsslider2 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie3canons {
+    animation: canonsslider3 9s infinite;
+}
+@keyframes canonsslider3 {
     0% {transform: translateX(0px)}
     20% {transform: translateX(0px)}
     25% {transform: translateX(-640px)}
