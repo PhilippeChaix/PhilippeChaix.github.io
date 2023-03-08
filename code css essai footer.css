@@ -55,8 +55,8 @@ ul { list-style-type: square; }
     background-position: center;
     background-size: cover;
     align-items: center;
-    position: fixed;
-    
+    position: fixed; 
+    z-index: 1;
 }
 
 .titre {
@@ -84,7 +84,7 @@ ul { list-style-type: square; }
       2em 0.2em 0.8em red;
     color: black;
     transition: all 1.5s;
-    transform : scale(1.1);   
+    transform : scale(1.2);   
 }
 
 
@@ -198,6 +198,54 @@ ul { list-style-type: square; }
 .plandusite hover{
     color: black;
 }
+
+
+.citation {
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 400px;
+	letter-spacing: 1px;
+	line-height:2;
+    width: 100%;
+    background: beige;
+    padding-bottom: 40px;
+}
+
+h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	font-size: 50px;
+	margin: 10px 0;
+}
+/* styling my button */
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
+
+
+
 footer {
     flex-shrink: 0;
     color: white;
@@ -246,11 +294,375 @@ footer {
 .logos {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(180deg,#1d2227 20%, #663d27 98%);
+    background: linear-gradient(180deg,#1d2227, #663d27);
     padding-bottom: 5px;
     padding-top: 5px;
     border-radius: 30px;
     margin: 10px;
     padding-left: 10px; padding-right: 10px;
     margin-bottom: 10px;
+}
+
+::selection{
+    background-color: #663d27;
+    color: beige;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 40px;
+    background: #1fe0;
+    color: white;
+    height: auto;
+    color: black;
+    font-size: 20px;
+    height: 360px; width: 640px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.galerie1aeronefs,
+.galerie2aeronefs,
+.galerie1missiles,
+.galerie2missiles,
+.galerie1drones,
+.galerie2drones,
+.galerie3drones,
+.galerie1chars,
+.galerie2chars,
+.galerie3chars,
+.galerie1armesafeu,
+.galerie2armesafeu,
+.galerie3armesafeu,
+.galerie1canons,
+.galerie2canons,
+.galerie3canons,
+.galerie1presentation,
+.galerie2presentation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 360px;width:640px;
+}
+
+.galerie1aeronefs {
+    animation: aeronefsslider1 18s infinite;
+}
+@keyframes aeronefsslider1 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2aeronefs {
+    animation: aeronefsslider2 9s infinite;
+}
+@keyframes aeronefsslider2 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1missiles {
+    animation: missilesslider1 18s infinite;
+}
+@keyframes missilesslider1 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2missiles {
+    animation: missilesslider2 9s infinite;
+}
+@keyframes missilesslider2 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1drones {
+    animation: dronesslider1 9s infinite;
+}
+@keyframes dronesslider1 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2drones {
+    animation: dronesslider2 18s infinite;
+}
+@keyframes dronesslider2 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie3drones {
+    animation: dronesslider3 9s infinite;
+}
+@keyframes dronesslider3 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1chars {
+    animation: charsslider1 9s infinite;
+}
+@keyframes charsslider1 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2chars {
+    animation: charsslider2 18s infinite;
+}
+@keyframes charsslider2 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie3chars {
+    animation: charsslider3 9s infinite;
+}
+@keyframes charsslider3 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1armesafeu {
+    animation: armesafeuslider1 9s infinite;
+}
+@keyframes armesafeuslider1 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2armesafeu {
+    animation: armesafeuslider2 18s infinite;
+}
+@keyframes armesafeuslider2 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie3armesafeu {
+    animation: armesafeuslider3 9s infinite;
+}
+@keyframes armesafeuslider3 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1canons {
+    animation: canonsslider1 9s infinite;
+}
+@keyframes canonsslider1 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2canons {
+    animation: canonsslider2 18s infinite;
+}
+@keyframes canonsslider2 {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie3canons {
+    animation: canonsslider3 9s infinite;
+}
+@keyframes canonsslider3 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1presentation {
+    animation: presentationslider1 9s infinite;
+}
+@keyframes presentationslider1 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2presentation {
+    animation: presentationslider2 9s infinite;
+}
+@keyframes presentationslider2 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
 }
