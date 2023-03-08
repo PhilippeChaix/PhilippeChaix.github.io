@@ -291,7 +291,9 @@ footer {
 .galerie3armesafeu,
 .galerie1canons,
 .galerie2canons,
-.galerie3canons{
+.galerie3canons,
+.galerie1presentation,
+.galerie2presentation{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -576,6 +578,36 @@ footer {
     animation: canonsslider3 9s infinite;
 }
 @keyframes canonsslider3 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie1presentation {
+    animation: presentationslider1 9s infinite;
+}
+@keyframes presentationslider1 {
+    0% {transform: translateX(0px)}
+    20% {transform: translateX(0px)}
+    25% {transform: translateX(-640px)}
+    45% {transform: translateX(-640px)}
+    50% {transform: translateX(-1280px)}
+    70% {transform: translateX(-1280px)}
+    75% {transform: translateX(-1920px)}
+    95% {transform: translateX(-1920px)}
+    100% {transform: translateX(0px)}
+}
+
+.galerie2presentation {
+    animation: presentationslider2 9s infinite;
+}
+@keyframes presentationslider2 {
     0% {transform: translateX(0px)}
     20% {transform: translateX(0px)}
     25% {transform: translateX(-640px)}
