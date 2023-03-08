@@ -212,7 +212,8 @@ ul { list-style-type: square; }
 	line-height:2;
     width: 100%;
     background: beige;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    padding-top: 40px;
 }
 
 h1 {
