@@ -304,6 +304,39 @@ footer {
     margin-bottom: 10px;
 }
 
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px){
+    
+    
+    .contenu-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+    .propos,
+    .infos,
+    .contact {
+        text-align: center;
+        padding 15px;
+        border-radius: 30px;
+        margin: auto;
+        margin-bottom: 40px;
+        width: 95%;
+        height: auto;
+        line-height: 30px;
+    }
+    .liste-prop {
+    line-height: 70px;
+    }
+}
+
+
+
+
 ::selection{
     background-color: #663d27;
     color: beige;
@@ -666,14 +699,4 @@ footer {
     75% {transform: translateX(-1920px)}
     95% {transform: translateX(-1920px)}
     100% {transform: translateX(0px)}
-}
-
-
-
-
-
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 900px){
-    
-    
 }
