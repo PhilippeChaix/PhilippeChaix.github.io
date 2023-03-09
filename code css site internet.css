@@ -207,13 +207,13 @@ ul { list-style-type: square; }
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 400px;
+	height: auto;
 	letter-spacing: 1px;
 	line-height:2;
     width: 100%;
     background: beige;
-    padding-bottom: 50px;
-    padding-top: 40px;
+    line-height: 50px;
+    font-size: 20px;
 }
 
 h1 {
@@ -222,10 +222,7 @@ h1 {
 	color: transparent;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
-	font-size: 50px;
 	margin: 10px 0;
-    padding-bottom: 40px;
-    padding-top: 40px;
 }
 /* styling my button */
 
@@ -255,6 +252,7 @@ footer {
     align-content: center;
     background: linear-gradient(180deg, #F5F5DC 0%, #1d2227 70%);
     padding-right: 40px; padding-left: 40px;
+    padding-top: 40px;
 }
 
 .contenu-footer {
