@@ -41,6 +41,7 @@ a:hover {
 
 a:active {
     text-decoration: none;
+    outline: none;
 }   
     
 th { width: 20000px;}
@@ -222,7 +223,7 @@ ul { list-style-type: square; }
     font-size: 20px;
 }
 
-h1 {
+h2{
 	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 	background-size: cover;
 	color: transparent;
@@ -342,6 +343,11 @@ footer {
 }
 
 
+.quatrecentquatre {
+    font-size: 80px;
+    color: beige;
+    text-align: center;
+}
 
 
 ::selection{
@@ -706,4 +712,23 @@ footer {
     75% {transform: translateX(-1920px)}
     95% {transform: translateX(-1920px)}
     100% {transform: translateX(0px)}
+}
+
+#pacman {
+  height: 470px;
+  width: 382px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+#shim {
+  font-family: 'Permanent Marker', cursive;
+  position: absolute;
+  visibility: hidden
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: yellow;
 }
