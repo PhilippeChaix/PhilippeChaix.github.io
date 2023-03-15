@@ -268,7 +268,8 @@ footer {
     align-items: flex-start;
     font-size: 20px;
     width: 100%;
-    background: #1fe0
+    background: #1fe0;
+    overflow: hidden;
 }
 
 .propos,
@@ -286,6 +287,7 @@ footer {
     width: 53%;
     height: 300px;
     margin-bottom: 10px;
+    text-overflow: inherit;
 }
 .propos {
     top: 80px;
